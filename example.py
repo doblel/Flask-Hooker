@@ -8,7 +8,7 @@ def github_push(json):
 
 app = Flask(__name__)
 
-hooker = Hooker(app=app, url_prefix='/hook')
+hooker = Hooker(app=app, url_prefix='/webhook')
 
 hooker.add_handler(event='push', func=github_push, event_type='X-Github-Event')
 
