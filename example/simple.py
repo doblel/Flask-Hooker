@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_hooker import Hooker
+from flask_hooker.hooker import Hooker
 
 
 def print_name(json):
@@ -7,7 +7,7 @@ def print_name(json):
 
 app = Flask(__name__)
 
-hooker = Hooker(app=app, url_prefix='/webhook')
+hooker = Hooker(app=app, url_prefix='/hook')
 
 hooker.add_handler(event='name', func=print_name, event_type='X-Custom-Event')
 
@@ -19,3 +19,6 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# $curl -H "Content-Type:application/json" -H "X-Custom-Event:name" -d '{"username":"doblel"}' -X POST localhost:5000/hook
