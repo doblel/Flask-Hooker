@@ -3,14 +3,14 @@ from flask_hooker.hooker import Hooker
 
 
 
-def print_name(json):
-    print 'print_name: new request from:', json['username']
+def github_push(json):
+    print json
 
 app = Flask(__name__)
 
 hooker = Hooker(app=app, url_prefix='/hook')
 
-hooker.add_handler(event='name', func=print_name, event_type='X-Custom-Event')
+hooker.add_handler(event='push', func=github_push, event_type='X-Github-Event')
 
 
 @app.route('/')

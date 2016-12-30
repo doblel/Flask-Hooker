@@ -7,7 +7,7 @@ from flask import Flask
 from flask_hooker import Hooker
 
 def github_issue(json):
-    print 'new issue at:', json['issue']['url]
+    print 'new issue at:', json['issue']['url']
     
 def gitlab_push(json):
     print 'the user %s push change into %s' % (json['user_name'], json['project']['name'])
