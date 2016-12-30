@@ -22,6 +22,6 @@ hooker = Hooker(app=app, url_prefix='/webhook')
 
 hooker.add_handler(event='issues', func=github_issue, event_type='X-Github-Event')
 hooker.add_handler('Push Hook', gitlab_push, 'X-Gitlab-Event')
-')
+
 ...
 ```
