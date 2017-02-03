@@ -7,7 +7,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Hooker',
-    version=1.0,
+    version="1.0.1",
     url='http://github.com/doblel/Flask-Hooker/',
     license='MIT',
     author='Lisandro Lucatti (doblel)',
