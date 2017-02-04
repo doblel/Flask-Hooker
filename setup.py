@@ -5,6 +5,12 @@ Flask-Hooker
 
 from setuptools import setup
 
+try:
+    import pypandoc
+    description = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    description = ''
+
 setup(
     name='Flask-Hooker',
     version="1.0.2",
@@ -13,7 +19,7 @@ setup(
     author='Lisandro Lucatti (doblel)',
     author_email='lucattilisandro@gmail.com',
     description='Receive and manage webhooks of several services at the same time',
-    long_description='',
+    long_description=description,
     packages=['flask_hooker'],
     zip_safe=False,
     include_package_data=True,
