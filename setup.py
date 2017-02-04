@@ -20,7 +20,9 @@ setup(
     platforms='any',
     entry_points={},
     install_requires=['Flask'],
-    tests_require=[],
+    tests_require=[
+        'coverage'
+    ],
     test_suite="tests",
     classifiers=[
         'Environment :: Web Environment',
