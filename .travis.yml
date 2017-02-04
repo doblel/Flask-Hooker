@@ -8,4 +8,4 @@ python:
   - "pypy"
 cache: pip
 install: python setup.py install
-script: pytest tests/flaskt_test.py
+script: python setup.py test
