@@ -5,7 +5,7 @@ from flask import Blueprint, jsonify, request
 class Hooker(object):
     """Docs here."""
 
-    def __init__(self, app=None, name='hooker', url_prefix='/webhooks', methods=['GET', 'POST']):
+    def __init__(self, app=None, name='hooker', url_prefix='/webhooks', methods=('GET', 'POST')):
         """Create the Hooker object."""
         self._app = app
         self._name = name
