@@ -3,7 +3,7 @@ from flask_hooker import hooker
 
 
 def return_name(json):
-    print json['name']
+    print(json['name'])
 
 
 app = Flask(__name__)
