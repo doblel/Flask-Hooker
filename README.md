@@ -2,6 +2,8 @@
 Receive and manage webhooks of several services at the same time
 
 [![PyPI version](https://badge.fury.io/py/Flask-Hooker.svg)](https://badge.fury.io/py/Flask-Hooker)
+[![Coverage Status](https://coveralls.io/repos/github/doblel/Flask-Hooker/badge.svg?branch=master)](https://coveralls.io/github/doblel/Flask-Hooker?branch=master)
+[![Code Health](https://landscape.io/github/doblel/Flask-Hooker/master/landscape.svg?style=flat)](https://landscape.io/github/doblel/Flask-Hooker/master)
 
 ###Simple usage
 ```python 
