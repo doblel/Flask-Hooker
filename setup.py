@@ -21,7 +21,7 @@ setup(
     entry_points={},
     install_requires=['Flask'],
     tests_require=[],
-    test_suite='t',
+    test_suite="tests",
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
