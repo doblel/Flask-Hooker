@@ -13,7 +13,7 @@ except (IOError, ImportError):
 
 setup(
     name='Flask-Hooker',
-    version="1.0.2",
+    version="1.0.3",
     url='http://github.com/doblel/Flask-Hooker/',
     license='MIT',
     author='Lisandro Lucatti (doblel)',
