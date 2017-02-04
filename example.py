@@ -5,7 +5,7 @@ from flask_hooker.hooker import Hooker
 
 def print_username(json):
     """Print name."""
-    print 'username: %s' % json['username']
+    print('username: %s' % json['username'])
 
 
 app = Flask(__name__)

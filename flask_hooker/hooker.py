@@ -26,7 +26,7 @@ class Hooker(object):
 
             self._event_handler[event_type].update(new_event)
         else:
-            print 'All parameters are required.'
+            print('All parameters are required.')
 
     def _run_handlers(self):
         if request.method == 'GET':
@@ -38,7 +38,7 @@ class Hooker(object):
                     if event in self._event_handler[event_type].keys():
                         self._event_handler[event_type][event](request.json)
                     else:
-                        print 'event not allowed.'
+                        print ('event not allowed.')
 
                 except Exception as e:
                     print e
