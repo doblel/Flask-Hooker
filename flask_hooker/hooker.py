@@ -41,7 +41,7 @@ class Hooker(object):
                         print('event not allowed.')
 
                 except Exception as e:
-                    print(str(e))
+                    return (str(e))
 
                 return jsonify({
                     'status': 'success',
@@ -49,6 +49,7 @@ class Hooker(object):
                 })
             else:
                 pass
+        return 'NO'
 
     def init_app(self, app):
         """Register the webhook."""
