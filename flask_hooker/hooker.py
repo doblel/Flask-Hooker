@@ -38,10 +38,10 @@ class Hooker(object):
                     if event in self._event_handler[event_type].keys():
                         self._event_handler[event_type][event](request.json)
                     else:
-                        print ('event not allowed.')
+                        print('event not allowed.')
 
                 except Exception as e:
-                    print e
+                    print(str(e))
 
                 return jsonify({
                     'status': 'success',
