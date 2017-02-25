@@ -22,6 +22,6 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='138.0.184.1', port=3000)
+    app.run(debug=True)
 
 # $curl -H "Content-Type:application/json" -H "X-Custom-Event:name" -d '{"username":"doblel"}' -X POST localhost:5000/webhook
