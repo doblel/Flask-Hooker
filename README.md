@@ -1,4 +1,4 @@
-#Flask-Hooker
+# Flask-Hooker
 Receive and manage webhooks of several services at the same time
 
 [![PyPI version](https://badge.fury.io/py/Flask-Hooker.svg)](https://badge.fury.io/py/Flask-Hooker)
@@ -7,7 +7,7 @@ Receive and manage webhooks of several services at the same time
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/doblel/Flask-Hooker/issues)
 
 
-###Simple usage
+### Simple usage
 ```python 
 from flask import Flask
 from flask_hooker import Hooker
